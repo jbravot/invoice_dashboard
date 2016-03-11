@@ -7,4 +7,4 @@ This module depend the free module <a href="https://apps.odoo.com/apps/modules/8
 
 Result
 ===============
-<img src="static/description/example.jpg" title="example">
+<img src="invoice_dashboard/static/description/example.jpg" title="example">
