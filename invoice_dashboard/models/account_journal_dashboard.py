@@ -155,7 +155,7 @@ class account_journal(models.Model):
             ac_bnk_stmt = self.env['account.bank.statement'].search([('journal_id', 'in', self.ids),('state', '=', 'open')])
             for ac_bnk in ac_bnk_stmt:
                 for line in ac_bnk.line_ids:
-                    if not line.journal_entry_ids:
+                    if not line.journal_entry_id:
                         number_to_reconcile += 1
             # optimization to read sum of balance from account_move_line
             account_ids = tuple(filter(None, [self.default_debit_account_id.id, self.default_credit_account_id.id]))
